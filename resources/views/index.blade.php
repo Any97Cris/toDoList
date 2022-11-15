@@ -13,24 +13,33 @@
 <body>
     <div class="container">
         <div class="titulo">
-            <h1>Lista de Tarefas</h1>
-            <input type="text" name="tarefa" id="terefa">
+            <h1>Lista de Tarefas</h1>  
+            <form action="/" method="POST">          
+                <input type="text" class="form-control" placeholder="Digitar atividade..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <br>                
+                <a class="btn btn-secondary btn-lg" type="button" id="button-addon1">Adicionar</a>                
+            </form>
+            <a href="/cadastrar" class="btn btn-success btn-lg">Cadastrar</a>
         </div>
-        <table class="table table-dark table-bordered border-secondary align-middle tamanhoTable">
+        <table class="table tamanhoTable">
             <thead>
-                <th class="table-dark">Nome</th>
-                <th>Descrição</th>
-                <th>Ações</th>
+                <th width="30%">Nome</th>
+                <th width="50%">Descrição</th>
+                <th width="20%" style="text-align: center">Ações</th>
             </thead>
             <tbody>
                 <td>PHP</td>
                 <td>Eloquent</td>
-                <td>
-                    <a href="#">Editar</a>
-                    <a href="#">Excluir</a>
+                <td style="text-align: center">
+                    <a href="#" class="btn btn-primary"><ion-icon name="create-outline"></ion-icon>Editar</a>
+                    <a href="#" class="btn btn-danger"><ion-icon name="trash-outline"></ion-icon>Excluir</a>
                 </td>
             </tbody>
         </table>
     </div>
+
+    <!-- ION-ICON - Inseir Icones -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
