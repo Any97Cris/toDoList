@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(44, 44, 44);
+}
+
+.titulo {    
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(60, 130, 236);     
+}
+
+h1 {
+    color: white;
+}
+
+.tamanhoTable {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
