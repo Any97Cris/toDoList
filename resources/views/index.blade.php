@@ -20,13 +20,11 @@
             <thead>
                 <th class="table-dark">Nome</th>
                 <th>Descrição</th>
-                <th>Data</th>
                 <th>Ações</th>
             </thead>
             <tbody>
                 <td>PHP</td>
                 <td>Eloquent</td>
-                <td>15/11/2022</td>
                 <td>
                     <a href="#">Editar</a>
                     <a href="#">Excluir</a>
