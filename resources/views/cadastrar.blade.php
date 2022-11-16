@@ -7,8 +7,26 @@
     <title>Cadastrar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    
 </head>
 <body>
-    Cadastrar
+    <div class="container mt-5">
+        <h2>Cadastrar Tarefa</h2>
+        <hr>
+        <form action="" method="POST">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nome da tarefa</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="Digite o nome da tarefa....">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Descrição da tarefa</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="description" rows="3" placeholder="Digite a descrição da tarefa...."></textarea>
+              </div>
+
+              <a href="/" class="btn btn-warning">Voltar</a>
+              <a href="/" class="btn btn-success">Salvar</a>
+            </div>  
+        </form>
+    </div>  
 </body>
 </html>
