@@ -27,14 +27,18 @@
                 <th width="50%">Descrição</th>
                 <th width="20%" style="text-align: center">Ações</th>
             </thead>
-            <tbody>
-                <td>PHP</td>
-                <td>Eloquent</td>
+            @foreach($tarefas as $tarefa)
+            <tbody>                
+                
+                <td>{{$tarefa->name}}</td>
+                <td>{{$tarefa->description}}</td>
                 <td style="text-align: center">
                     <a href="#" class="btn btn-primary"><ion-icon name="create-outline"></ion-icon>Editar</a>
                     <a href="#" class="btn btn-danger"><ion-icon name="trash-outline"></ion-icon>Excluir</a>
                 </td>
+                
             </tbody>
+            @endforeach
         </table>
     </div>
 
