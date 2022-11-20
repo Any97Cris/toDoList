@@ -14,5 +14,5 @@ use App\Http\Controllers\TaskController;
 |
 */
 
-Route::get('/', function () { return view('index');});
+Route::get('/', [App\Http\Controllers\TaskController::class, 'index']);
 Route::get('/cadastrar', [TaskController::class, 'create']);
