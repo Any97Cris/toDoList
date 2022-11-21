@@ -17,9 +17,10 @@
             <form action="/" method="POST">          
                 <input type="text" class="form-control" placeholder="Digitar atividade..." aria-label="Example text with button addon" aria-describedby="button-addon1">
                 <br>                
-                <a class="btn btn-secondary btn-lg" type="button" id="button-addon1">Adicionar</a>                
+                <a class="btn btn-secondary btn-lg" type="button" id="button-addon1">Adicionar</a>   
+                <a href="/cadastrar" class="btn btn-success btn-lg">Cadastrar Tarefa</a>             
             </form>
-            <a href="/cadastrar" class="btn btn-success btn-lg">Cadastrar</a>
+            
         </div>
         <table class="table tamanhoTable">
             <thead>
