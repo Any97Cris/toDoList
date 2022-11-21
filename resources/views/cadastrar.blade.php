@@ -13,7 +13,8 @@
     <div class="container mt-5">
         <h2>Cadastrar Tarefa</h2>
         <hr>
-        <form action="" method="POST">
+        <form action="/tarefas/store" method="POST">
+            @csrf
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nome da tarefa</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="Digite o nome da tarefa....">
@@ -24,7 +25,7 @@
               </div>
 
               <a href="/" class="btn btn-warning">Voltar</a>
-              <a href="/" class="btn btn-success">Salvar</a>
+              <input type="submit" class="btn btn-success" value="Salvar"/>
             </div>  
         </form>
     </div>  
