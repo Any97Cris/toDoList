@@ -16,5 +16,16 @@ class TaskController extends Controller
     public function create(){
         return view('cadastrar');
     }    
+
+    public function store(Request $request) {
+        $tarefa = new Task;
+
+        $tarefa->name = $request->name;
+        $tarefa->description = $request->description;
+
+        $tarefa->save();
+
+        return redirect('/');
+    }
     
 }
