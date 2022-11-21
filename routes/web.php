@@ -14,7 +14,12 @@ use App\Http\Controllers\TaskController;
 |
 */
 
-Route::get('/', [App\Http\Controllers\TaskController::class, 'index']);
-Route::get('/cadastrar', [TaskController::class, 'create']);
+Route::get('/', [TaskController::class, 'index']);
 
+Route::get('/cadastrar', [TaskController::class, 'create']);
 Route::post('/tarefas/store', [TaskController::class, 'store']);
+
+Route::get('/editar/{id}', [TaskController::class, 'edit']);
+Route::post('/tarefas/upload/{id}', [TaskController::class, 'upload']);
+
+Route::post('/deletar/{id}', [TaskController::class, 'destroy']);
