@@ -16,3 +16,5 @@ use App\Http\Controllers\TaskController;
 
 Route::get('/', [App\Http\Controllers\TaskController::class, 'index']);
 Route::get('/cadastrar', [TaskController::class, 'create']);
+
+Route::post('/tarefas/store', [TaskController::class, 'store']);
