@@ -14,10 +14,10 @@
     <div class="container">
         <div class="titulo">
             <h1>Lista de Tarefas</h1>  
-            <form action="/" method="POST">          
-                <input type="text" class="form-control" placeholder="Digitar atividade..." aria-label="Example text with button addon" aria-describedby="button-addon1">
-                <br>                
-                <a class="btn btn-secondary btn-lg" type="button" id="button-addon1">Adicionar</a>   
+            <form action="/" method="GET">          
+                <input type="text" name="search" id="search" class="form-control" placeholder="Pesquisar atividade..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <br>                
+                <input type="submit" value="Pesquisar" class="btn btn-secondary btn-lg" type="button" id="button-addon1"></a>   
                 <a href="/cadastrar" class="btn btn-success btn-lg">Cadastrar Tarefa</a>             
             </form>
             
@@ -34,8 +34,11 @@
                 <td>{{$tarefa->name}}</td>
                 <td>{{$tarefa->description}}</td>
                 <td style="text-align: center">
-                    <a href="#" class="btn btn-primary"><ion-icon name="create-outline"></ion-icon>Editar</a>
-                    <a href="#" class="btn btn-danger"><ion-icon name="trash-outline"></ion-icon>Excluir</a>
+                    <form action="/deletar/{{$tarefa->id}}" method="POST">
+                    @csrf
+                    <a href="/editar/{{$tarefa->id}}" class="btn btn-primary"><ion-icon name="create-outline"></ion-icon>Editar</a>
+                    <input type="submit" value="Excluir" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja deletar este registro?')">
+                    </form>
                 </td>
                 
             </tbody>
